@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use("/api", scoreRoutes);
 
-mongoose.connect("mongodb://127.0.0.1:27017/snakegame")
+mongoose.connect("mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/gameDB")
 .then(() => console.log("MongoDB Connected"))
 .catch((err) => console.log(err));
 
